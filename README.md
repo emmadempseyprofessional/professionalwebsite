@@ -6,11 +6,10 @@ Emma Dempsey's professional website, that showcases her resumé, portfolio, and 
 
 ### Suggested Software
 1. [VS Code](https://code.visualstudio.com/download)
-2. NVM
- - For [Windows](https://github.com/coreybutler/nvm-windows)
- - For [Mac](https://github.com/nvm-sh/nvm)
+2. NVM for [Windows](https://github.com/coreybutler/nvm-windows) or [Mac](https://github.com/nvm-sh/nvm)
+   - Run `nvm install 18.19.1` and `nvm use 18.19.1`
 3. [Git](https://git-scm.com/downloads)
- - Set your git username and email with `git config --global user.name "<YOUR NAME>"` and `git config --global user.email "<YOUR EMAIL>"`
+   - Set your git username and email with `git config --global user.name "<YOUR NAME>"` and `git config --global user.email "<YOUR EMAIL>"`
 
 ### Local Development
 1. Run `npm install`
@@ -18,10 +17,6 @@ Emma Dempsey's professional website, that showcases her resumé, portfolio, and 
    - Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 
--- resume
--- contact page
--- visual portfolio
--- writing portfolio
 
 ## Code scaffolding
 
@@ -54,16 +49,6 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 ```bash
 ng test
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
 
