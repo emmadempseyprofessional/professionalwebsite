@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavigationBarComponent } from './navigation-bar.component';
+import { RouterModule } from '@angular/router';
+import { routes } from '@infrastructure/app.routes';
 
 describe('NavigationBarComponent', () => {
     let component: NavigationBarComponent;
@@ -8,7 +10,7 @@ describe('NavigationBarComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            imports: [NavigationBarComponent]
+            imports: [NavigationBarComponent, RouterModule.forRoot(routes)]
         })
             .compileComponents();
 
