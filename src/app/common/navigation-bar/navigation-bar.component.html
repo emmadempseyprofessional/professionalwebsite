@@ -1,0 +1,58 @@
+<div class="d-flex flex-column flex-shrink-0 h-100 py-3 bg-body-tertiary" [ngClass]="{
+        'px-3 navigation-bar-expanded': isExpanded(),
+        'navigation-bar-collapsed': !isExpanded()
+    }">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <a [routerLink]="RoutePath.Landing" class="fs-4">
+            (ICON)
+        </a>
+    </a>
+    <ul class="nav nav-pills flex-column mb-auto" [ngClass]="{'nav-flush': isExpanded(), 'text-center': !isExpanded()}">
+        <li class="nav-item">
+            <a [routerLink]="RoutePath.VisualPortfolio" class="nav-link" aria-current="page">
+                @if(isExpanded()) {
+                Visual Portfolio
+                } @else {
+                &nbsp;
+                }
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="RoutePath.WritingPortfolio" class="nav-link link-body-emphasis">
+                @if(isExpanded()) {
+                Writing Portfolio
+                } @else {
+                &nbsp;
+                }
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="RoutePath.Resume" class="nav-link link-body-emphasis">
+                @if(isExpanded()) {
+                Résumé
+                } @else {
+                &nbsp;
+                }
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="RoutePath.Contact" class="nav-link link-body-emphasis">
+                @if(isExpanded()) {
+                Contact
+                } @else {
+                &nbsp;
+                }
+            </a>
+        </li>
+    </ul>
+    <hr>
+    <div class="text-center">
+        <button (click)="toggleIsExpanded()">
+            @if(isExpanded()) {
+            &lt;
+            } @else {
+            &gt;
+            }
+        </button>
+    </div>
+</div>
