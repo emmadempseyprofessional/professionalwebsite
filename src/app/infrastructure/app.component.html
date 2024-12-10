@@ -1,9 +1,9 @@
-<div class="container-fluid">
-    <div class="row">
-        <nav class="col-auto min-vh-100">
-            <app-navigation-bar></app-navigation-bar>
+<div class="container-fluid full-height">
+    <div class="d-flex flex-row justify-content-start align-items-stretch">
+        <nav class="d-flex flex-column">
+            <app-navigation-bar class="flex-grow-1"></app-navigation-bar>
         </nav>
-        <div class="col">
+        <div class="flex-grow-1">
             <router-outlet />
         </div>
     </div>
