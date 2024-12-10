@@ -1,4 +1,4 @@
-<div class="d-flex flex-column flex-shrink-0 h-100 p-3 bg-body-tertiary" [ngClass]="{
+<div id="navigation-bar-container" class="d-flex flex-column flex-shrink-0 h-100 p-3" [ngClass]="{
         'navigation-bar-expanded': isExpanded(),
         'navigation-bar-collapsed': !isExpanded()
     }">
@@ -6,7 +6,7 @@
 
         @if(isExpanded()) {
         <a [routerLink]="RoutePath.Landing" class="fs-4 text-decoration-none">
-            ( LOGO )
+            <img src="navbarlogo.png" id="navbarlogo" class="img-fluid" />
         </a>
         }
     </a>

@@ -1,5 +1,8 @@
 @import "bootstrap/scss/mixins";
 
+$heading-font-size: calc(1rem + 3vw);
+$description-font-size: calc(0.75rem + 2vw);
+
 #landing-background {
     background: rgba(253,252,250,255);
 }
@@ -19,12 +22,14 @@
     font-family: Arial Rounded MT Bold;
     text-align: left;
     color:#a21e5b;
+    padding-left: calc(1.325rem + 1.2vw);
 }
 
 #__p__i_m_emma_dempsey {
-    @include font-size(3.8rem);
+    // @include font-size(3.2rem);
     // TODO: If we want more control on the scaling or size, we may need to do the following:
-    // font-size: calc(1.525rem + 3.3vw);
+    padding-left: calc(1.325rem + 1.2vw);
+    font-size: $heading-font-size;
 	font-family: Arial Rounded MT Bold;
 	text-align: left;
 	color:#a21e5b;
@@ -32,35 +37,40 @@
 
 #__p__i_m_a_recent_college_graduate_with_a_creative__business_minded_perspective__take_a_look_at_my_work__i_d_love_to_chat_about_it_with_you__ {
 	font-family: MADE Carving Soft PERSONAL USE;
-    @include font-size(2.9rem);
+    font-size: $description-font-size;
 	text-align: left;
 	color:#a21e5b;
+    padding-left: calc(1.325rem + 1.2vw);
 }
 
 #__p__what_do_i_do_ {
     font-family: Arial Rounded MT Bold;
-    @include font-size(3.8rem);
+    font-size: $heading-font-size;
     text-align: left;
     color:#a21e5b;
+    padding-right: calc(1.325rem + 1.2vw);
 }
 
 #__p__from_media_production__design__and_theory__i_ve_worked_to_make_myself_familiar_with_it_all__my_studies_and_work_experiences_have_given_me_the_opportunity_to_create_with_various_creative_tools__my_goal_is_for_my_work_to_inspire_and_to_effortlessly_communica {
 	font-family: MADE Carving Soft PERSONAL USE;
-    @include font-size(2.9rem);
+    font-size: $description-font-size;
 	text-align: left;
 	color:#a21e5b;
+    padding-right: calc(1.325rem + 1.2vw);
 }
 
 #__p__why_do_i_do_it_ {
 	font-family: Arial Rounded MT Bold;
-    @include font-size(3.8rem);
+    font-size: $heading-font-size;
 	text-align: left;
 	color:#a21e5b;
+    padding-left: calc(1.325rem + 1.2vw);
 }
 
 #__p__i_know_that_i_have_a_strong_passion_for_helping_businesses_grow_and_succeed__to_me__nothing_is_more_fulfilling_than_seeing_a_project_come_to_life___ {
 	font-family: MADE Carving Soft PERSONAL USE;
-    @include font-size(2.9rem);
+    font-size: $description-font-size;
 	text-align: left;
 	color:#a21e5b;
+    padding-left: calc(1.325rem + 1.2vw);
 }

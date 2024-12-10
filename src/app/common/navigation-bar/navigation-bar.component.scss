@@ -1,3 +1,15 @@
+#navigation-bar-container {
+    background-color: #F8DFE6;
+
+    a, button {
+        color: #A21E5B;
+    }
+}
+
+#navbarlogo {
+    max-width: 100px;
+}
+
 .navigation-bar-expanded {
     width: fit-content;
 }
