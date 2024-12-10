@@ -1,1 +1,18 @@
 @import "bootstrap-overrides";
+
+//Ensure that the body fits all its content
+body {
+    display: flex;
+    flex-direction: column;
+
+    /* For some mobile browsers, this height causes some scroll to be required. */
+    height: 100vh;
+}
+
+app-root {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+F
