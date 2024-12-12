@@ -7,16 +7,23 @@
 
 <h5>Reach Out</h5>
 
-<div class="mb-3">
-    <input type="email" class="form-control" id="NameBox" placeholder="Name">
-  </div>
-
-  <div class="mb-3">
-    <input type="email" class="form-control" id="EmailBox" placeholder="Email">
-  </div>
-
-  <div class="mb-3">
-    <textarea class="form-control" id="MessageBox" rows="3" placeholder="Type your message here..."></textarea>
-  </div>
-
-  <button class="btn btn-light w-100 py-4">Submit</button>
+<!-- action="mailto:Emma Dempsey emmadempysey.professional@gmail.com?subject={{'Inquiry from ' + emailName.value}}&body={{emailBody.value}}" -->
+ <!-- (submit)="onSubmit(name.value, subject.value, body.value)" -->
+<form (submit)="onFormSubmit($event)" (input)="onInput()" [ngClass]="{'was-validated': showValidation()}" novalidate>
+    <div class="mb-3">
+        <input #name class="form-control" id="NameBox" type="text" placeholder="Name" required>
+        <div class="invalid-feedback">
+            Please provide a valid name.
+          </div>
+      </div>
+    
+      <div class="mb-3">
+        <input #subject class="form-control" id="SubjectBox" type="text" placeholder="Subject" required>
+      </div>
+    
+      <div class="mb-3">
+        <textarea #body class="form-control" id="MessageBox" rows="3" type="text" placeholder="Type your message here..." required></textarea>
+      </div>
+    
+      <button class="btn btn-light w-100 py-4" type="submit">Send Email</button>
+</form>
