@@ -8,6 +8,8 @@
 // 2. Include any default variable overrides here
 
 $primary: #A21E5B;
+$secondary: #F8DFE6;
+$light: #ffffff;
 
 //TODO: Configure options from https://getbootstrap.com/docs/5.3/customize/options/
 $enable-caret: false;
@@ -64,3 +66,13 @@ $grid-gutter-width: 0;
 @import "bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+.btn-light {
+    @include button-variant(
+        $light,
+        #dee2e6,
+        $hover-background: $secondary,
+        $hover-border: $secondary,
+        $active-background: $primary,
+        $active-border: $primary
+      );
+}

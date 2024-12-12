@@ -13,7 +13,7 @@ export class NavigationBarComponent {
     //Expose enums
     RoutePath = RoutePath;
 
-    isExpanded: WritableSignal<boolean> = signal(false);
+    isExpanded: WritableSignal<boolean> = signal(true);
 
     toggleIsExpanded() {
         this.isExpanded.update(oldIsExpanded => !oldIsExpanded)
