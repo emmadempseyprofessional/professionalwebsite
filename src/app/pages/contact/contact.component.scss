@@ -1,7 +1,3 @@
-#contactlogo-container {
-    width: fit-content;
-}
-
 #NameBox {
     font-size: 15px;
 }
@@ -19,6 +15,5 @@ h5 {
 }
 
 #contactlogo {
-    height: 332.77px;
-    width: 758.73px;
+    max-height: 332.77px;
 }
