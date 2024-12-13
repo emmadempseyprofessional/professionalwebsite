@@ -9,11 +9,11 @@ import { BackToTopComponent } from '@common/back-to-top/back-to-top.component';
     styleUrl: './writing-portfolio.component.scss'
 })
 export class WritingPortfolioComponent {
+    //Expose enums
+    SelectedWriting = SelectedWriting;
+    
     selection: WritableSignal<SelectedWriting> = signal(SelectedWriting.None);
 
-    get SelectedWriting(): typeof SelectedWriting {
-        return SelectedWriting;
-    }
 
     onSelectWriting(writing: SelectedWriting) {
         this.selection.set(writing);

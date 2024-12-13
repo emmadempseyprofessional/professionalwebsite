@@ -2,7 +2,7 @@
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
 
         @if(isExpanded()) {
-        <a [routerLink]="RoutePath.Landing" class="fs-4 text-decoration-none">
+        <a [routerLink]="RouterLinkRoutePath.Landing" class="fs-4 text-decoration-none">
             <img src="/images/navbarlogo.png" id="navbarlogo" class="img-fluid" alt="Simplified Logo Icon" />
         </a>
         }
@@ -17,24 +17,24 @@
             </button>
             <ul class="dropdown-menu">
                 <li>
-                    <a [routerLink]="RoutePath.VisualPortfolio" class="dropdown-item nav-link" aria-current="page">
+                    <a [routerLink]="RouterLinkRoutePath.VisualPortfolio" class="dropdown-item nav-link" aria-current="page">
                         Visual Portfolio
                     </a>
                 </li>
                 <li>
-                    <a [routerLink]="RoutePath.WritingPortfolio" class="dropdown-item nav-link" aria-current="page">
+                    <a [routerLink]="RouterLinkRoutePath.WritingPortfolio" class="dropdown-item nav-link" aria-current="page">
                         Writing Portfolio
                     </a>
                 </li>
             </ul>
         </li>
         <li>
-            <a [routerLink]="RoutePath.Resume" class="nav-link link-body-emphasis">
+            <a [routerLink]="RouterLinkRoutePath.Resume" class="nav-link link-body-emphasis">
                 Resume
             </a>
         </li>
         <li>
-            <a [routerLink]="RoutePath.Contact" class="nav-link link-body-emphasis">
+            <a [routerLink]="RouterLinkRoutePath.Contact" class="nav-link link-body-emphasis">
                 Contact
             </a>
         </li>

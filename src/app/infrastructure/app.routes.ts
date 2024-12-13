@@ -5,12 +5,20 @@ import { ResumeComponent } from '@pages/resume/resume.component';
 import { VisualPortfolioComponent } from '@pages/visual-portfolio/visual-portfolio.component';
 import { WritingPortfolioComponent } from '@pages/writing-portfolio/writing-portfolio.component';
 
-export enum RoutePath {
+enum RoutePath {
     Contact = 'contact',
     Landing = 'landing',
     Resume = 'resume',
     VisualPortfolio = 'visual-portfolio',
     WritingPortfolio = 'writing-porfolio'
+}
+
+export enum RouterLinkRoutePath {
+    Contact = `/${RoutePath.Contact}`,
+    Landing = `/${RoutePath.Landing}`,
+    Resume = `/${RoutePath.Resume}`,
+    VisualPortfolio = `/${RoutePath.VisualPortfolio}`,
+    WritingPortfolio = `/${RoutePath.WritingPortfolio}`
 }
 
 export const routes: Routes = [
