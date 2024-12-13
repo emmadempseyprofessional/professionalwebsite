@@ -1,16 +1,29 @@
 @import "bootstrap/scss/mixins";
+@import "variables";
 
 $heading-font-size: calc(1rem + 3vw);
 $description-font-size: calc(0.75rem + 1.75vw);
 
 
 #landing1 {
+    padding-right: 0px;
+    @include media-breakpoint-up(sm, $grid-breakpoints) {
+        padding-right: calc(1.325rem + 1.2vw);
+    }
 }
 
 #landing2 {
+    padding-left: 0px;
+    @include media-breakpoint-up(sm, $grid-breakpoints) {
+        padding-left: calc(1.325rem + 1.2vw);
+    }
 }
 
 #landing3 {
+    padding-right: 0px;
+    @include media-breakpoint-up(sm, $grid-breakpoints) {
+        padding-right: calc(1.325rem + 1.2vw);
+    }
 }
 
 #__p__hi_ {
@@ -18,13 +31,12 @@ $description-font-size: calc(0.75rem + 1.75vw);
     font-family: 'ArialRoundedBold';
     text-align: left;
     color:#a21e5b;
-    padding-left: calc(1.325rem + 1.2vw);
 }
+
 
 #__p__i_m_emma_dempsey {
     // @include font-size(3.2rem);
     // TODO: If we want more control on the scaling or size, we may need to do the following:
-    padding-left: calc(1.325rem + 1.2vw);
     font-size: $heading-font-size;
 	font-family: 'ArialRoundedBold';
 	text-align: left;
@@ -35,7 +47,6 @@ $description-font-size: calc(0.75rem + 1.75vw);
     font-size: $description-font-size;
 	text-align: left;
 	color:#a21e5b;
-    padding-left: calc(1.325rem + 1.2vw);
     font-family: 'MADECarvingSoftRegular';
 }
 
@@ -44,14 +55,12 @@ $description-font-size: calc(0.75rem + 1.75vw);
     font-size: $heading-font-size;
     text-align: left;
     color:#a21e5b;
-    padding-right: calc(1.325rem + 1.2vw);
 }
 
 #__p__from_media_production__design__and_theory__i_ve_worked_to_make_myself_familiar_with_it_all__my_studies_and_work_experiences_have_given_me_the_opportunity_to_create_with_various_creative_tools__my_goal_is_for_my_work_to_inspire_and_to_effortlessly_communica {
     font-size: $description-font-size;
 	text-align: left;
 	color:#a21e5b;
-    padding-right: calc(1.325rem + 1.2vw);
     font-family: 'MADECarvingSoftRegular';
 }
 
@@ -60,13 +69,11 @@ $description-font-size: calc(0.75rem + 1.75vw);
     font-size: $heading-font-size;
 	text-align: left;
 	color:#a21e5b;
-    padding-left: calc(1.325rem + 1.2vw);
 }
 
 #__p__i_know_that_i_have_a_strong_passion_for_helping_businesses_grow_and_succeed__to_me__nothing_is_more_fulfilling_than_seeing_a_project_come_to_life___ {
     font-size: $description-font-size;
 	text-align: left;
 	color:#a21e5b;
-    padding-left: calc(1.325rem + 1.2vw);
     font-family: 'MADECarvingSoftRegular';
 }

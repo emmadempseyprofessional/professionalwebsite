@@ -2,3 +2,20 @@ $primary: #A21E5B;
 $secondary: #F8DFE6;
 $light: #ffffff;
 $black: #585C5E;
+
+
+
+
+
+
+
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
