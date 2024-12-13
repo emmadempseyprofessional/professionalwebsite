@@ -1,8 +1,10 @@
+@import "variables";
+
 #navigation-bar-container {
-    background-color: #F8DFE6;
+    background-color: $secondary;
 
     a, button {
-        color: #A21E5B;
+        color: $primary;
     }
 }
 
