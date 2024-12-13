@@ -40,6 +40,32 @@ $grid-gutter-width: 0;
 
 // 6. Optionally include any other parts as needed
 @import "bootstrap/scss/utilities";
+
+//Modify utilities
+$utilities: map-merge(
+  $utilities,
+  (
+    "flex-grow": map-merge(
+      map-get($utilities, "flex-grow"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "flex-grow"), "values"),
+          (grow-2: 2),
+        ),
+      ),
+    ),
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (fit-content: fit-content),
+        ),
+      ),
+    ),
+  )
+);
+
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
 @import "bootstrap/scss/images";
@@ -95,9 +121,4 @@ $grid-gutter-width: 0;
         $active-background: $primary,
         $active-border: $primary
       );
-}
-
-// Custom utility classes (based off bootstrap's)
-.w-fit-content {
-    width: fit-content;
 }
