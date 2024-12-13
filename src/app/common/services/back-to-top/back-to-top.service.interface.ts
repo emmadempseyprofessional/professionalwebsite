@@ -1,4 +1,3 @@
-import { EffectRef, ElementRef } from "@angular/core";
 import { Subscription } from "rxjs";
 
 export abstract class IBackToTopService {
@@ -6,7 +5,7 @@ export abstract class IBackToTopService {
     public abstract registerScrollHandlerSubscription(elementType: ScrollableElement, element: Element): Subscription
 }
 
-export type ScrollEvent = {
+export interface ScrollEvent {
     elementType: ScrollableElement;
     options: ScrollToOptions;
 }

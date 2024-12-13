@@ -1,4 +1,4 @@
-import { effect, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { IBackToTopService, ScrollableElement, ScrollEvent } from './back-to-top.service.interface';
 import { filter, Subject, Subscription } from 'rxjs';
 

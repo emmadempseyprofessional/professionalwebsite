@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { VisualPortfolioComponent } from './visual-portfolio.component';
+import { IBackToTopService } from '@common/services/back-to-top/back-to-top.service.interface';
+import { BackToTopService } from '@common/services/back-to-top/back-to-top.service';
 
 describe('VisualPortfolioComponent', () => {
     let component: VisualPortfolioComponent;
@@ -8,7 +10,11 @@ describe('VisualPortfolioComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            imports: [VisualPortfolioComponent]
+            imports: [VisualPortfolioComponent],
+            providers: [
+                //Services
+                { provide: IBackToTopService, useClass: BackToTopService }
+            ]
         })
             .compileComponents();
 
