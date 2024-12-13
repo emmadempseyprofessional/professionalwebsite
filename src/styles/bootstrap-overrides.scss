@@ -9,7 +9,16 @@
 
 @import "variables";
 
-$font-family: 'MADECarvingSoftRegular'; // , sans-serif
+$btn-hover-bg-shade-amount:       15%;
+$btn-hover-bg-tint-amount:        25%;
+$btn-hover-border-shade-amount:   20%;
+$btn-hover-border-tint-amount:    10%;
+$btn-active-bg-shade-amount:      20%;
+$btn-active-bg-tint-amount:       20%;
+$btn-active-border-shade-amount:  25%;
+$btn-active-border-tint-amount:   10%;
+
+$font-family: 'MADECarvingSoftRegular'; // TODO: Can we include a backup font here, like sans-serif?
 
 //TODO: Configure options from https://getbootstrap.com/docs/5.3/customize/options/
 $enable-caret: false;
@@ -66,6 +75,17 @@ $grid-gutter-width: 0;
 @import "bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+.btn-secondary {
+    @include button-variant(
+        $secondary,
+        $secondary,
+        $color: $primary,
+        $hover-color: $primary,
+        $active-background: $primary,
+        $active-border: $primary
+      );
+}
+
 .btn-light {
     @include button-variant(
         $light,
@@ -75,4 +95,9 @@ $grid-gutter-width: 0;
         $active-background: $primary,
         $active-border: $primary
       );
+}
+
+// Custom utility classes (based off bootstrap's)
+.w-fit-content {
+    width: fit-content;
 }

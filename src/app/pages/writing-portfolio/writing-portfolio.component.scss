@@ -1,20 +1,41 @@
 @import "variables";
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+/* Animation for removing the instructions */
+#writing-portfolio-instruction {
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    max-height: 200px;
 }
 
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
+#writing-portfolio-instruction.visual-slideup-dissapear {
+    opacity: 0;
+    max-height: 0;
 }
 
-p {
-    text-indent: 2em;
-    /* or 15px, or 5%, 2rem or 3vw */
-    color: $primary;
+/* Button sizing */
+button {
+    font-size: 1.5rem;
+    border-radius: .75rem;
+}
+
+button#writing-portfolio-btn-shawshank {
+    max-width: 22rem;
+}
+
+button#writing-portfolio-btn-dali {
+    max-width: 22rem;
+}
+
+button#writing-portfolio-btn-entrepreneurship {
+    max-width: 19rem;
+}
+
+/* Writing */
+section {
+    border-radius: 1rem;
+
+    p {
+        text-indent: 2em;
+        /* or 15px, or 5%, 2rem or 3vw */
+        color: $primary;
+    }
 }
