@@ -42,6 +42,12 @@
               "src/styles/styles.scss",
               "src/styles/fonts.scss"
             ],
+            "stylePreprocessorOptions": {
+                "includePaths": [
+                    "src/styles",
+                    "node_modules/bootstrap/scss/"
+                ]
+            },
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
@@ -104,7 +110,15 @@
                 "src/styles/styles.scss",
                 "src/styles/fonts.scss"
             ],
-            "scripts": [],
+            "stylePreprocessorOptions": {
+                "includePaths": [
+                    "src/styles",
+                    "node_modules/bootstrap/scss/"
+                ]
+            },
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
             "karmaConfig": "karma.conf.js"
           }
         },
