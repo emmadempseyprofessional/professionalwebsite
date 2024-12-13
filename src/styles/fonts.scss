@@ -1,18 +1,22 @@
 @font-face {
     font-family: 'ArialRoundedBold';
-    src: url("/fonts/ArialRoundedBold.ttf") format("truetype");
+    // src: url("^./fonts/ArialRoundedBold.ttf") format("truetype");
+    src: url("^./../../../public/fonts/ArialRoundedBold.ttf") format("truetype");
 }
 @font-face {
     font-family: 'MADECarvingSoftRegular';
-    src: url("/fonts/MADECarvingSoftRegular.otf") format("opentype");
+    // src: url("/fonts/MADECarvingSoftRegular.otf") format("opentype");
+    src: url("^./../../../public/fonts/MADECarvingSoftRegular.otf") format("opentype");
 }
 @font-face {
     font-family: 'MADETommyRegular';
-    src: url("/fonts/MADETommyRegular.otf") format("opentype");
+    // src: url("/fonts/MADETommyRegular.otf") format("opentype");
+    src: url("^./../../../public/fonts/MADETommyRegular.otf") format("opentype");
 }
 @font-face {
     font-family: 'AvenirNext';
-    src: url("/fonts/Avenir Next.ttc") format("truetype");    
+    // src: url("/fonts/Avenir Next.ttc") format("truetype");
+    src: url("^./../../../public/fonts/Avenir Next.ttc") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
