@@ -1,6 +1,5 @@
 <div id="navigation-bar-container" class="d-flex flex-column flex-shrink-0 h-100 py-3 px-1 px-sm-3 w-fit-content">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
         @if(isExpanded()) {
         <a [routerLink]="RouterLinkRoutePath.Landing" class="fs-4 text-decoration-none">
             <img src="images/navbarlogo.png" id="navbar-logo" class="img-fluid" alt="Simplified Logo Icon" />
@@ -46,7 +45,7 @@
             </ul>
         </li>
         <li class="nav-item py-3">
-            <a [routerLink]="RouterLinkRoutePath.Contact" class="nav-link link-body-emphasis">
+            <a [routerLink]="RouterLinkRoutePath.Contact" class="nav-link">
                 Contact
             </a>
         </li>
