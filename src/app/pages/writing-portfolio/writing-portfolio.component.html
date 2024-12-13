@@ -10,13 +10,13 @@
     <div class="col-12 col-lg-4 col-xxl-auto">
         <button type="button" class="btn btn-secondary w-100" [ngClass]="{'active': (selection() === SelectedWriting.Shawshank)}"
             id="writing-portfolio-btn-shawshank" (click)="onSelectWriting(SelectedWriting.Shawshank)">
-            The Shawshank Redemption's Modern Redemption
+            <span class="fst-italic">The Shawshank Redemption</span>'s Modern Redemption
         </button>
     </div>
     <div class="col-12 col-lg-4 col-xxl-auto">
         <button type="button" class="btn btn-secondary w-100" [ngClass]="{'active': (selection() === SelectedWriting.Dali)}"
             id="writing-portfolio-btn-dali" (click)="onSelectWriting(SelectedWriting.Dali)">
-            Salvador Dalí's The Little Theater: How His Performance Art Background Influenced Audience Perception
+            Salvador Dalí's <span class="fst-italic">The Little Theater</span>: How His Performance Art Background Influenced Audience Perception
         </button>
     </div>
     <div class="col-12 col-lg-4 col-xxl-auto">
