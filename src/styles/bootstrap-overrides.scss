@@ -7,10 +7,7 @@
 
 // 2. Include any default variable overrides here
 
-$primary: #A21E5B;
-$secondary: #F8DFE6;
-$light: #ffffff;
-$black: #585C5E;
+@import "variables";
 
 $font-family: 'MADECarvingSoftRegular'; // , sans-serif
 

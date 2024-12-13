@@ -1,3 +1,5 @@
+@import "styles/variables";
+
 .centered {
     position: absolute;
     top: 50%;
@@ -14,4 +16,5 @@
   p
 { 
   text-indent: 2em; /* or 15px, or 5%, 2rem or 3vw */
+  color: $primary;
 }

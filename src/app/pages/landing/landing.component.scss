@@ -1,7 +1,7 @@
 @import "bootstrap/scss/mixins";
 
 $heading-font-size: calc(1rem + 3vw);
-$description-font-size: calc(0.75rem + 2vw);
+$description-font-size: calc(0.75rem + 1.75vw);
 
 
 #landing1 {
@@ -36,6 +36,7 @@ $description-font-size: calc(0.75rem + 2vw);
 	text-align: left;
 	color:#a21e5b;
     padding-left: calc(1.325rem + 1.2vw);
+    font-family: 'MADECarvingSoftRegular';
 }
 
 #__p__what_do_i_do_ {
@@ -51,6 +52,7 @@ $description-font-size: calc(0.75rem + 2vw);
 	text-align: left;
 	color:#a21e5b;
     padding-right: calc(1.325rem + 1.2vw);
+    font-family: 'MADECarvingSoftRegular';
 }
 
 #__p__why_do_i_do_it_ {
@@ -66,4 +68,5 @@ $description-font-size: calc(0.75rem + 2vw);
 	text-align: left;
 	color:#a21e5b;
     padding-left: calc(1.325rem + 1.2vw);
+    font-family: 'MADECarvingSoftRegular';
 }
