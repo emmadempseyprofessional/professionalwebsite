@@ -1,16 +1,16 @@
-<div id="navigation-bar-container" class="d-flex flex-column flex-shrink-0 h-100 p-3 w-fit-content">
+<div id="navigation-bar-container" class="d-flex flex-column flex-shrink-0 h-100 py-3 px-2 px-sm-3 w-fit-content">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
 
         @if(isExpanded()) {
         <a [routerLink]="RouterLinkRoutePath.Landing" class="fs-4 text-decoration-none">
-            <img src="images/navbarlogo.png" id="navbarlogo" class="img-fluid" alt="Simplified Logo Icon" />
+            <img src="images/navbarlogo.png" id="navbar-logo" class="img-fluid" alt="Simplified Logo Icon" />
         </a>
         }
     </a>
-    <ul class="nav nav-pills flex-column mb-auto nav-flush">
+    <ul class="nav nav-pills flex-column justify-content-center flex-fill nav-flush">
 
         @if(isExpanded()) {
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown py-3">
             <button class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Portfolio
@@ -28,12 +28,12 @@
                 </li>
             </ul>
         </li>
-        <li>
+        <li class="nav-item py-3">
             <a [routerLink]="RouterLinkRoutePath.Resume" class="nav-link link-body-emphasis">
                 Resume
             </a>
         </li>
-        <li>
+        <li class="nav-item py-3">
             <a [routerLink]="RouterLinkRoutePath.Contact" class="nav-link link-body-emphasis">
                 Contact
             </a>
@@ -41,12 +41,12 @@
         }
     </ul>
     <hr>
-    <div class="text-center">
-        <button (click)="toggleIsExpanded()">
+    <div class="w-100">
+        <button (click)="toggleIsExpanded()" class="btn btn-secondary border-0 bg-transparent mx-auto" id="navbar-arrow">
             @if(isExpanded()) {
-            &lt;
+                <img src="images/arrowleft.png" class="img-fluid" alt="Left arrow" />
             } @else {
-            &gt;
+                <img src="images/arrowright.png" class="img-fluid" alt="Right arrow" />
             }
         </button>
     </div>
