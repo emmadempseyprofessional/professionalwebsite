@@ -6,21 +6,21 @@
     <h5 class="w-fit-content mx-auto">Select a Title</h5>
 </div>
 
-<div class="row mt-0 mb-4 mx-0 px-5 gx-3 gy-4 justify-content-around">
-    <div class="col-auto">
-        <button class="btn btn-secondary" [ngClass]="{'active': (selection() === SelectedWriting.Shawshank)}"
+<div class="row mt-0 mb-4 mx-0 gx-3 gy-4 justify-content-around">
+    <div class="col-12 col-lg-4 col-xxl-auto">
+        <button type="button" class="btn btn-secondary w-100" [ngClass]="{'active': (selection() === SelectedWriting.Shawshank)}"
             id="writing-portfolio-btn-shawshank" (click)="onSelectWriting(SelectedWriting.Shawshank)">
             The Shawshank Redemption's Modern Redemption
         </button>
     </div>
-    <div class="col-auto">
-        <button class="btn btn-secondary" [ngClass]="{'active': (selection() === SelectedWriting.Dali)}"
+    <div class="col-12 col-lg-4 col-xxl-auto">
+        <button type="button" class="btn btn-secondary w-100" [ngClass]="{'active': (selection() === SelectedWriting.Dali)}"
             id="writing-portfolio-btn-dali" (click)="onSelectWriting(SelectedWriting.Dali)">
             Salvador Dalí's The Little Theater: How His Performance Art Background Influenced Audience Perception
         </button>
     </div>
-    <div class="col-auto">
-        <button class="btn btn-secondary" [ngClass]="{'active': (selection() === SelectedWriting.Entrepreneurship)}"
+    <div class="col-12 col-lg-4 col-xxl-auto">
+        <button type="button" class="btn btn-secondary w-100" [ngClass]="{'active': (selection() === SelectedWriting.Entrepreneurship)}"
             id="writing-portfolio-btn-entrepreneurship" (click)="onSelectWriting(SelectedWriting.Entrepreneurship)">
             Young Entrepreneurship: A Sweet Dream
         </button>

@@ -1,12 +1,12 @@
 <div id="navigation-bar-container" class="d-flex flex-column flex-shrink-0 h-100 py-3 px-1 px-sm-3 w-fit-content">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+    <a href="/" class="d-flex flex-grow-1 justify-content-start mb-3 mb-md-0 me-md-auto text-decoration-none">
         @if(isExpanded()) {
         <a [routerLink]="RouterLinkRoutePath.Landing" class="fs-4 text-decoration-none">
             <img src="images/navbarlogo.png" id="navbar-logo" class="img-fluid" alt="Simplified Logo Icon" />
         </a>
         }
     </a>
-    <ul class="nav nav-pills flex-column justify-content-center flex-fill nav-flush">
+    <ul class="nav nav-pills flex-grow-2 justify-content-start flex-column nav-flush">
         @if(isExpanded()) {
         <li class="nav-item dropdown py-3">
             <button class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

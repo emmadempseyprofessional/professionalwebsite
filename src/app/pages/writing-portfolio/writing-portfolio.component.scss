@@ -1,3 +1,4 @@
+@import "bootstrap/scss/mixins";
 @import "variables";
 
 /* Animation for removing the instructions */
@@ -17,16 +18,18 @@ button {
     border-radius: .75rem;
 }
 
-button#writing-portfolio-btn-shawshank {
-    max-width: 22rem;
-}
-
-button#writing-portfolio-btn-dali {
-    max-width: 22rem;
-}
-
-button#writing-portfolio-btn-entrepreneurship {
-    max-width: 19rem;
+@include media-breakpoint-up(lg, $grid-breakpoints) {
+    button#writing-portfolio-btn-shawshank {
+        max-width: 22rem;
+    }
+    
+    button#writing-portfolio-btn-dali {
+        max-width: 22rem;
+    }
+    
+    button#writing-portfolio-btn-entrepreneurship {
+        max-width: 19rem;
+    }
 }
 
 /* Writing */
