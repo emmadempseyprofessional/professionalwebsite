@@ -50,7 +50,12 @@ $utilities: map-merge(
       (
         values: map-merge(
           map-get(map-get($utilities, "flex-grow"), "values"),
-          (grow-2: 2),
+          (
+            grow-2: 2,
+            grow-3: 3,
+            grow-4: 4,
+            grow-5: 5,
+          ),
         ),
       ),
     ),
