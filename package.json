@@ -9,7 +9,7 @@
         "test": "ng test",
         "test:ci": "npm test -- --no-watch --no-progress --browsers=EdgeHeadless",
         "lint": "ng lint",
-        "deploy": "ng deploy --base-href=/professionalwebsite/ --name='emmadempseyprofessional' --email=emmadempsey.professional@gmail.com"
+        "deploy": "ng deploy --cname=emmadempseyportfolio.com --name='emmadempseyprofessional' --email=emmadempsey.professional@gmail.com"
     },
     "private": true,
     "dependencies": {
