@@ -1,0 +1,8 @@
+@import "bootstrap/scss/mixins";
+@import "variables";
+
+h1 {
+    font-family: ArialRoundedBold;
+    color: $primary;
+    font-size: 50px;
+}
