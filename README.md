@@ -1,6 +1,12 @@
+[![Angular GitHub CI Tests](https://github.com/emmadempseyprofessional/professionalwebsite/actions/workflows/pr-validation.yml/badge.svg)](https://github.com/emmadempseyprofessional/professionalwebsite/actions/workflows/pr-validation.yml)
+[![Angular GitHub CD](https://github.com/emmadempseyprofessional/professionalwebsite/actions/workflows/cd-pipeline.yml/badge.svg)](https://github.com/emmadempseyprofessional/professionalwebsite/actions/workflows/cd-pipeline.yml)
+[![pages-build-deployment](https://github.com/emmadempseyprofessional/professionalwebsite/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/emmadempseyprofessional/professionalwebsite/actions/workflows/pages/pages-build-deployment) 
+
+[Published Website](https://www.emmadempseyportfolio.com)
+
+
 # ProfessionalWebsite
 Emma Dempsey's professional website, that showcases her resumé, portfolio, and contact information.
-
 
 ## Local Development
 
