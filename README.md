@@ -1,6 +1,7 @@
 # ProfessionalWebsite
 Emma Dempsey's professional website, that showcases her resumé, portfolio, and contact information.
 
+[Published Website](https://www.emmadempseyportfolio.com)
 
 ## Local Development
 
