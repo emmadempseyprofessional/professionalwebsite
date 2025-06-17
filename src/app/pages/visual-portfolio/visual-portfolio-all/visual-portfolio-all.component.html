@@ -2,79 +2,57 @@
     <div class="col-md-5 text-center text-md-end">
         <div class="row mx-0 gy-3">
             <app-portfolio-img class="col-12 pe-md-4" className="mx-auto ms-md-auto me-md-0"
-                alt="Guitarist playing at a show" src="images/visual1.jpg" id="visual1" date="March 2022"
-                description="Guitarist playing at a show"></app-portfolio-img>
+                [card]="getCard('visual1')"></app-portfolio-img>
             <app-portfolio-img class="col-12 pe-md-4" className="mx-auto ms-md-auto me-md-0"
-                alt="Close up of funfetti cupcakes" src="images/visual3.jpg" id="visual3" date="????"
-                description="????????"></app-portfolio-img>
+                [card]="getCard('visual3')"></app-portfolio-img>
             <app-portfolio-img class="col-12 pt-md-4" className="mx-auto ms-md-auto me-md-0"
-                alt="Photographed self portrait of Emma Dempsey, in costume" src="images/visual5.jpg" id="visual5"
-                date="????" description="????????"></app-portfolio-img>
+                [card]="getCard('visual5')"></app-portfolio-img>
         </div>
     </div>
     <div class="col-md-7 ps-0">
         <div class="row mx-0 gy-3">
-
-            <app-portfolio-img class="col-12" alt="Black and white photo of a goose with its head underwater"
-                src="images/visual2.jpg" id="visual2" date="????" description="????????"></app-portfolio-img>
-
-            <app-portfolio-img class="col-12 ps-md-3" alt="Pointillism piece of a magnolia tree flower"
-                src="images/visual4.jpg" id="visual4" date="????" description="????????"></app-portfolio-img>
-
-            <app-portfolio-img class="col-12 ps-md-5" alt="Singer for a band holding microphone to the crowd"
-                src="images/visual6.jpg" id="visual6" date="????" description="????????"></app-portfolio-img>
+            <app-portfolio-img class="col-12" [card]="getCard('visual2')"></app-portfolio-img>
+            <app-portfolio-img class="col-12 ps-md-3" [card]="getCard('visual4')"></app-portfolio-img>
+            <app-portfolio-img class="col-12 ps-md-5" [card]="getCard('visual6')"></app-portfolio-img>
         </div>
     </div>
 </div>
 
 <div class="row mx-0 mt-0 mt-md-4 gy-3 gx-md-4">
     <app-portfolio-img class="col-md-3 text-center text-md-end" className="mx-auto ms-md-auto me-md-0"
-        alt="Abstract photo of a tree with moss" src="images/visual7.jpg" id="visual7" date="????"
-        description="????????"></app-portfolio-img>
+        [card]="getCard('visual7')"></app-portfolio-img>
     <app-portfolio-img class="col-md-9 text-center text-md-start" className="mx-auto ms-md-auto me-md-0"
-        alt="Lefthand and Righthand sides of a magazine featured on April Greiman" src="images/visual8.jpg" id="visual8"
-        date="????" description="????????"></app-portfolio-img>
+        [card]="getCard('visual8')"></app-portfolio-img>
 </div>
 
 <div class="row mx-0 mt-0 mt-md-4 gy-3 gx-md-4">
     <app-portfolio-img class="col-md-5 text-center text-md-end" className="mx-auto ms-md-auto me-md-0"
-        alt="Infographic on most popular flavors of Dum Dums lollipops" src="images/visual9.jpg" id="visual9"
-        date="????" description="????????"></app-portfolio-img>
+        [card]="getCard('visual9')"></app-portfolio-img>
     <app-portfolio-img class="col-md-7 text-center text-md-start" className="mx-auto ms-md-0 me-md-auto"
-        alt="Portrait of a redheaded woman in the forest during autumn" src="images/visual10.jpg" id="visual10"
-        date="????" description="????????"></app-portfolio-img>
+        [card]="getCard('visual10')"></app-portfolio-img>
 </div>
 
 <div class="row mx-0 mt-0 mt-md-4 gy-3 gx-md-4">
     <app-portfolio-img class="col-md-8 text-center text-md-end pt-md-4" className="mx-auto ms-md-auto me-md-0"
-        alt="Lefthand and Righthand sides of a magazine featured on April Greiman" src="images/visual11.jpg"
-        id="visual11" date="????" description="????????"></app-portfolio-img>
+        [card]="getCard('visual11')"></app-portfolio-img>
     <app-portfolio-img class="col-md-4 text-center text-md-start" className="mx-auto ms-md-0 me-md-auto"
-        alt="Headshot style portrait of a woman against a tree" src="images/visual12.jpg" id="visual12" date="????"
-        description="????????"></app-portfolio-img>
+        [card]="getCard('visual12')"></app-portfolio-img>
 </div>
 
 <div class="row mx-0 mt-0 mt-md-4 gy-3 gx-md-4">
     <div class="col-md-5">
         <div class="row mx-0 gy-3 gy-md-4">
             <app-portfolio-img class="col-12 text-center text-md-end" className="mx-auto ms-md-auto me-md-0"
-                alt="Close up photo of a dandelion" src="images/visual13.jpg" id="visual13" date="????"
-                description="????????"></app-portfolio-img>
+                [card]="getCard('visual13')"></app-portfolio-img>
             <app-portfolio-img class="col-12 text-center text-md-end" className="mx-auto ms-md-0 me-md-auto"
-                alt="Abstract graphic design using similar colors and shapes" src="images/visual16.jpg" id="visual16"
-                date="????" description="????????"></app-portfolio-img>
+                [card]="getCard('visual16')"></app-portfolio-img>
         </div>
     </div>
     <Div class="col-md-7">
         <div class="row mx-0 gy-3 gy-md-4">
-            <app-portfolio-img class="col-12 ps-md-6" alt="Close up photo of pink macarons" src="images/visual14.jpg"
-                id="visual14" date="????" description="????????"></app-portfolio-img>
-
-            <app-portfolio-img class="col-12" alt="Photo of a winding path in a park" src="images/visual15.jpg"
-                id="visual15" date="????" description="????????"></app-portfolio-img>
-
-            <app-portfolio-img class="col-12" alt="Landscape of the beach, with a single subject walking the shore"
-                src="images/visual17.jpg" id="visual17" date="????" description="????????"></app-portfolio-img>
+            <app-portfolio-img class="col-12 ps-md-6" [card]="getCard('visual14')"></app-portfolio-img>
+            <app-portfolio-img class="col-12" [card]="getCard('visual15')"></app-portfolio-img>
+            <app-portfolio-img class="col-12" [card]="getCard('visual17')"></app-portfolio-img>
         </div>
     </Div>
 </div>

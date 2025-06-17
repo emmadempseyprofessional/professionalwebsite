@@ -1,7 +1,7 @@
 import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { BackToTopComponent } from '@common/back-to-top/back-to-top.component';
+import { BackToTopComponent } from '@common/components/back-to-top/back-to-top.component';
 import { RouterLinkRoutePath } from '@infrastructure/app.routes';
 
 @Component({

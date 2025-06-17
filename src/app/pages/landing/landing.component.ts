@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BackToTopComponent } from "../../common/back-to-top/back-to-top.component";
+import { BackToTopComponent } from "../../common/components/back-to-top/back-to-top.component";
 import { RouterModule } from '@angular/router';
 import { RouterLinkRoutePath } from '@infrastructure/app.routes';
 

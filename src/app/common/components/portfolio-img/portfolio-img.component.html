@@ -1,0 +1,10 @@
+<button (click)="onClick()" (blur)="onBlur()" class="card d-block p-0 border border-0" [ngClass]="className" *ngIf="card">
+    <img [src]="card.src" [id]="card.id" class="img-fluid" [alt]="card.alt">
+    <div class="card-img-overlay bg-primary bg-opacity-50 text-white"
+        [ngClass]="{'d-flex': isActive(), 'd-none': !isActive()}">
+        <div class="card-text text-start mt-auto row gy-2">
+            <div class="col-12">{{card.date}}</div>
+            <div class="col-12">{{card.description}}</div>
+        </div>
+    </div>
+</button>
