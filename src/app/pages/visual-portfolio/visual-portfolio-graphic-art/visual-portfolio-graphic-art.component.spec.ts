@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { VisualPortfolioGraphicArtComponent } from './visual-portfolio-graphic-art.component';
+import { IVisualPortfolioDataService } from '@common/services/visual-portfolio-data/visual-portfolio-data.service.interface';
+import { VisualPortfolioDataService } from '@common/services/visual-portfolio-data/visual-portfolio-data.service';
 
 describe('VisualPortfolioGraphicArtComponent', () => {
     let component: VisualPortfolioGraphicArtComponent;
@@ -7,7 +9,11 @@ describe('VisualPortfolioGraphicArtComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            imports: [VisualPortfolioGraphicArtComponent]
+            imports: [VisualPortfolioGraphicArtComponent],
+            providers: [
+                //Services
+                { provide: IVisualPortfolioDataService, useClass: VisualPortfolioDataService }
+            ]
         })
             .compileComponents();
 
