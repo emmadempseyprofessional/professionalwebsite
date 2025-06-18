@@ -13,7 +13,7 @@ export enum VisualPortfolioPageType {
     Photography = 1 << 2
 }
 
-export type VisualPortfolioCard = {
+export interface VisualPortfolioCard {
     /**
      * unique identifier of the card
      */

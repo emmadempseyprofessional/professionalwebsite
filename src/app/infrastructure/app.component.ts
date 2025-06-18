@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, Renderer2, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavigationBarComponent } from "../common/components/navigation-bar/navigation-bar.component";
 import { IScrollService, ScrollableElement } from '@common/services/back-to-top/scroll.service.interface';
@@ -24,8 +24,11 @@ export class AppComponent implements AfterViewInit, OnDestroy {
         this.scrollSubscription?.unsubscribe();
     }
 
-    onScroll(event: any) {
-        const scrolledToBottomPercentage = (event.target.scrollTop) / (event.target.scrollHeight - event.target.offsetHeight);
+    onScroll(event: Event) {
+        if(event.target === null) return;
+        const eventTarget = event.target as HTMLElement;
+
+        const scrolledToBottomPercentage = (eventTarget.scrollTop) / (eventTarget.scrollHeight - eventTarget.offsetHeight);
         this.renderer.setAttribute(this.mainElement.nativeElement, 'style', `--emma-scroll: ${scrolledToBottomPercentage}`);
     }
 }

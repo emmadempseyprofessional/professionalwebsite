@@ -5,8 +5,6 @@ import { IVisualPortfolioDataService, VisualPortfolioCard, VisualPortfolioPageTy
     providedIn: 'root'
 })
 export class VisualPortfolioDataService implements IVisualPortfolioDataService {
-    constructor() { }
-
     public retrieveCard(pageType: VisualPortfolioPageType, id: string): VisualPortfolioCard | undefined {
         return this.visualPortfolioCardList.find(card => 
             (card.pages & pageType) != 0
