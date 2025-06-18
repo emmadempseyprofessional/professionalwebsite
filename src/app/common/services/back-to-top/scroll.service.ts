@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { IBackToTopService, ScrollableElement, ScrollEvent } from './back-to-top.service.interface';
+import { IScrollService, ScrollableElement, ScrollEvent } from './scroll.service.interface';
 import { filter, Subject, Subscription } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
 })
-export class BackToTopService implements IBackToTopService {
+export class ScrollService implements IScrollService {
     private scrollMessage: Subject<ScrollEvent>;
 
     constructor() {
@@ -21,7 +21,6 @@ export class BackToTopService implements IBackToTopService {
             filter((scrollEvent: ScrollEvent) => scrollEvent.elementType === elementType)
         ).subscribe((scrollEvent: ScrollEvent) => {
             /* Perform scroll on provided element */
-            console.log("Performing scroll...", element);
             element.scrollTo(scrollEvent.options);
         });
     }

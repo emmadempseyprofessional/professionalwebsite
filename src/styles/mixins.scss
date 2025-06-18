@@ -1,0 +1,30 @@
+@mixin linear-scroll-animation($animation-name, $animation-start: 0.0, $animation-end: 1.0) {
+    --emma-animation-start: #{$animation-start};
+    --emma-animation-end: #{$animation-end};
+
+    /* Determine linear equation that supports this animation start\end */
+    --emma-scroll-min: 0.0;
+    --emma-scroll-max: 1.0;
+    --emma-animation-timespan: (var(--emma-animation-end) - var(--emma-animation-start));
+    --emma-animation-rate: (var(--emma-scroll-max) / var(--emma-animation-timespan));
+    --emma-animation-y-intercept: (-1.0 * var(--emma-animation-rate) * var(--emma-animation-start)); //  
+
+    /* Animation Linear equation with MIN\MAX limits*/
+    --emma-animation-progress: calc(
+        max(
+            var(--emma-scroll-min), 
+            min(
+                var(--emma-scroll-max),
+                var(--emma-animation-rate) * var(--emma-scroll) + var(--emma-animation-y-intercept)
+            )
+        )
+    );
+
+    animation-name: #{$animation-name};
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-delay: calc(-1s * (var(--emma-animation-progress)));
+    animation-iteration-count: 1; // How many times can the animation play
+    animation-fill-mode: both;
+}

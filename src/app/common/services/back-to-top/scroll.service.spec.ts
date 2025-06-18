@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { BackToTopService } from './back-to-top.service';
+import { ScrollService } from './scroll.service';
 
-describe('BackToTopService', () => {
-  let service: BackToTopService;
+describe('ScrollService', () => {
+  let service: ScrollService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(BackToTopService);
+    service = TestBed.inject(ScrollService);
   });
 
   it('should be created', () => {

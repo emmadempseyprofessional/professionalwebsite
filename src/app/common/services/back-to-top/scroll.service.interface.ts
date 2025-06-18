@@ -1,6 +1,6 @@
 import { Subscription } from "rxjs";
 
-export abstract class IBackToTopService {
+export abstract class IScrollService {
     public abstract emitScrollEvent(scrollEvent: ScrollEvent): void
     public abstract registerScrollHandlerSubscription(elementType: ScrollableElement, element: Element): Subscription
 }

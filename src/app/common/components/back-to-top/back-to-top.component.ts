@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IBackToTopService, ScrollableElement } from '@common/services/back-to-top/back-to-top.service.interface';
+import { IScrollService, ScrollableElement } from '@common/services/back-to-top/scroll.service.interface';
 
 @Component({
     selector: 'app-back-to-top',
@@ -8,7 +8,7 @@ import { IBackToTopService, ScrollableElement } from '@common/services/back-to-t
     styleUrl: './back-to-top.component.scss'
 })
 export class BackToTopComponent {
-    constructor(private readonly backToTopService: IBackToTopService) {}
+    constructor(private readonly backToTopService: IScrollService) {}
 
     onScrollToTop() {
         this.backToTopService.emitScrollEvent({

@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BackToTopComponent } from './back-to-top.component';
-import { IBackToTopService } from '@common/services/back-to-top/back-to-top.service.interface';
-import { BackToTopService } from '@common/services/back-to-top/back-to-top.service';
+import { IScrollService } from '@common/services/back-to-top/scroll.service.interface';
+import { ScrollService } from '@common/services/back-to-top/scroll.service';
 
 describe('BackToTopComponent', () => {
     let component: BackToTopComponent;
@@ -13,7 +13,7 @@ describe('BackToTopComponent', () => {
             imports: [BackToTopComponent],
             providers: [
                 //Services
-                { provide: IBackToTopService, useClass: BackToTopService }
+                { provide: IScrollService, useClass: ScrollService }
             ]
         })
             .compileComponents();

@@ -1,5 +1,6 @@
 @import "bootstrap/scss/mixins";
 @import "variables";
+@import "mixins";
 
 $heading-font-size: calc(1rem + 3vw);
 $description-font-size: calc(0.75rem + 1.75vw);
@@ -11,18 +12,21 @@ $description-font-size: calc(0.75rem + 1.75vw);
         padding-right: calc(1.325rem + 1.2vw);
     }
 }
-
 #landing2 {
     padding-left: 0px;
+    @include linear-scroll-animation(opacity-reveal, 0.3, 0.5);
     @include media-breakpoint-up(sm, $grid-breakpoints) {
         padding-left: calc(1.325rem + 1.2vw);
+        @include linear-scroll-animation(opacity-reveal, 0.0, .25);
     }
 }
 
 #landing3 {
     padding-right: 0px;
+    @include linear-scroll-animation(opacity-reveal, 0.7, 0.8);
     @include media-breakpoint-up(sm, $grid-breakpoints) {
         padding-right: calc(1.325rem + 1.2vw);
+        @include linear-scroll-animation(opacity-reveal, 0.5, .75);
     }
 }
 
@@ -83,4 +87,15 @@ $description-font-size: calc(0.75rem + 1.75vw);
 	text-align: left;
 	color:#a21e5b;
     font-family: 'MADECarvingSoftRegular';
+}
+
+
+
+@keyframes opacity-reveal {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
